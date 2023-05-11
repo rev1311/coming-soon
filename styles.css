@@ -19,3 +19,43 @@ body, html {
     width: 100%;
     min-height: 250px;
 }
+
+#copy-container {
+    text-align: center;
+    font-family: 'AdiHaus', sans-serif;
+    padding: 30px;
+    color: #423A3A;
+}
+
+#copy-container > h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+#copy-container > h1 > span {
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #CD3A24;
+}
+
+#copy-container > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
