@@ -32,6 +32,8 @@ body, html {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
 }
 
 #copy-container > h1 > span {
@@ -39,6 +41,8 @@ body, html {
     font-size: 48px;
     font-weight: 400;
     color: #CD3A24;
+    line-height: 42px;
+    margin-bottom: 15px;
 }
 
 #copy-container > p {
