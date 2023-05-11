@@ -51,6 +51,36 @@ body, html {
     line-height: 28px;
 }
 
+#form-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#email-input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    font-family: 'AdiHaus', sans-serif;
+}
+
+#email-submit-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #423A3A;
+    color: #fff;
+    font-family: 'AdiHaus', sans-serif;
+}
+
 @font-face {
     font-family: 'AdiHaus';
     src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
