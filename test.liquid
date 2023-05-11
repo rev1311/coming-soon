@@ -1,0 +1,45 @@
+{% if first_time_accessed %}
+    <script type="text/javascript">
+    !function(e){if(!window.pintrk){window.pintrk=function()
+    {window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+    n=window.pintrk;n.queue=[],n.version="3.0";var
+    t=document.createElement("script");t.async=!0,t.src=e;var
+    r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}
+    ("https://s.pinimg.com/ct/core.js");
+    
+    pintrk('load','2614265166279', { em: '{{ customer.email }}', }); 
+    pintrk('page'); 
+    </script> 
+    <noscript> 
+    <img height="1" width="1" style="display:none;" alt=""
+    src="https://ct.pinterest.com/v3/?tid=2614265166279&noscript=1" /> 
+    </noscript>
+    
+    <script>
+    pintrk('track', 'checkout',{
+    value: {{ total_price }} / 100,
+    currency: '{{ currency }}',
+    order_quantity: 2,
+    event_id: '{{ event_id }}',
+    line_items: [
+         {
+           product_name: '{{ product_name_1 }}',
+           product_id: '{{ product_id_1 }}',
+           product_price: {{ product_price_1 }},
+           product_quantity: 1
+         },
+         {
+           product_name: '{{ product_name_2 }}',
+           product_id: '{{ product_id_2 }}',
+           product_price: {{ product_price_2 }},
+           product_quantity: 1
+         },
+       ],
+    order_id: {{ checkout.order_id }}
+    });
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+    src="https://ct.pinterest.com/v3/?tid=2614265166279&event=checkout&noscript=1"/>
+    </noscript>
+    {% endif %}
