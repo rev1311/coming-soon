@@ -9,12 +9,12 @@ body, html {
     min-height: 100vh;
 }
 
-.logo-container {
+#logo-container {
     padding: 20px 0 10px 0;
     text-align: center;
 }
 
-.hero-container {
+#hero-container {
     background: center / cover url('/assets/athlete-girl.webp');
     width: 100%;
     min-height: 250px;
