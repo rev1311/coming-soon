@@ -7,6 +7,7 @@
 body, html {
     min-width: 100%;
     min-height: 100vh;
+    font-family: 'AdiHaus', sans-serif;
 }
 
 #logo-container {
@@ -22,7 +23,6 @@ body, html {
 
 #copy-container {
     text-align: center;
-    font-family: 'AdiHaus', sans-serif;
     padding: 30px;
     color: #423A3A;
 }
