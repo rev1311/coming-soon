@@ -106,7 +106,7 @@ body {
 
     #content-container {
         max-width: 50%;
-        margin-left: 50px;
+        margin-left: 100px;
     }
     
     #logo-container {
@@ -121,7 +121,7 @@ body {
     #copy-container {
         text-align: left;
         margin-top: 50px;
-        width: 85%;
+        min-width: 95%;
     }
     
     #copy-container > h1 {
