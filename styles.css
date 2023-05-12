@@ -10,6 +10,10 @@ body, html {
     font-family: 'AdiHaus', sans-serif;
 }
 
+body {
+    display: flex;
+}
+
 #content-container {
     max-width: 500px;
     margin: 0 auto;
@@ -84,6 +88,49 @@ body, html {
     background-color: #423A3A;
     color: #fff;
     font-family: 'AdiHaus', sans-serif;
+}
+
+#desktop-container {
+    display: none;
+    min-width: 50%;
+    height: 100vh;
+    background: center / cover url('/assets/athlete-big.webp');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: center / cover url('/assets/destop-bg.webp');
+    }
+
+    #content-container {
+        max-width: 50%;
+        margin-left: 50px;
+    }
+    
+    #logo-container {
+        padding: 50px 30px;
+        text-align: left;
+    }
+    
+    #hero-container {
+        display: none;
+    }
+    
+    #copy-container {
+        text-align: left;
+        margin-top: 50px;
+        width: 85%;
+    }
+    
+    #copy-container > h1 {
+        width: 80%;
+    }
+
+    #desktop-container {
+        display: block;
+    }
 }
 
 @font-face {
