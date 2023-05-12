@@ -10,6 +10,11 @@ body, html {
     font-family: 'AdiHaus', sans-serif;
 }
 
+#content-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 #logo-container {
     padding: 20px 0 10px 0;
     text-align: center;
